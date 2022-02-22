@@ -45,9 +45,7 @@ export default {
     register(){
       alert('Congratulations your account has been successfully registered!')
     },
-    clickMe() {
-                this.$buefy.notification.open('Clicked!!')
-            }
+    
   }
 }
 </script>

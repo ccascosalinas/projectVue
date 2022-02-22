@@ -15,7 +15,7 @@ section
     section
         b-button(@click='facebook' type='is-info') Facebook
         b-button(@click='instagram' type='is-danger') Instagram
-        b-button(@click='twitter' type='is-primary') Facebook
+        b-button(@click='twitter' type='is-primary') Twitter
         b-button(@click='git' type='is-warning') GitHub
     section
       b-carousel
