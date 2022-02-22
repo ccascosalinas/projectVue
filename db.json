@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "profesion":"Devops",
+      "nombre": "Christian Casco",
+      "descripcion": "Resident of the city of Tegucigalpa."
+    },
+    {
+      "id": 2,
+      "profesion":"Developer",
+      "nombre": "Dixy Barahona",
+      "descripcion": "Resident of the city of Siguatepeque."
+    },
+    {
+      "id": 3,
+      "profesion":"Scrum Master",
+      "nombre": "Jeremy R. DeYoung",
+      "descripcion": "Resident of the city of Dallas."
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "manzanas",
+      "shopId": 1
+    },
+    {
+      "id": 2,
+      "name": "peras",
+      "shopId": 1
+    },
+    {
+      "id": 3,
+      "name": "escoba",
+      "shopId": 2
+    }
+  ]
+}
