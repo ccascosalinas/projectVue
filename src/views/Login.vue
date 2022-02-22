@@ -4,7 +4,7 @@
     b-breadcrumb(align='is-left')
       b-breadcrumb-item(tag='router-link' to='/home.vue') Home
       b-breadcrumb-item(tag='router-link' to='/team.vue') Team
-      b-breadcrumb-item(tag='router-link' to='/Schedule.vue') Discover the company
+      b-breadcrumb-item(tag='router-link' to='/Schedule.vue') Discover the company   
     section
       p Sign in
     b-field(label='Name')
@@ -32,8 +32,6 @@
     button.button.is-link.is-light Cancel
     section
       b-image(:src="require('@/assets/img/login.jpg')" ratio='601by235' :rounded='rounded')
-      section
-        b-button(@click='clickMe') Click Me
 </template>
 
 <script>

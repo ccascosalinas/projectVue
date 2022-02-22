@@ -30,7 +30,7 @@ section
   .card-content
     .content
       p.title {{profesion1}} 
-      p.subtitle {{nombre}}
+      p.subtitle {{nombre1}}
       h3 {{descripcion1}}
       .card
   .card-image
@@ -55,23 +55,32 @@ export default {
         { text: "Love", color: "warning" },
         { text: "Loyalty", color: "danger" },
       ],
+      profesion1: '',
+      nombre1:'',
+      descripcion1:'',
+      profesion2:'',
+      nombre2:'',
+      descripcion2:''
     };
   },
   
-  mounted(){
-    let access = this
-    axios.get('http://localhost:3006/users')
-    .then(function(response){
-      access.profesion1= response.data[0].profesion
-      access.nombre1 = response.data[0].nombre
-      access.descripcion1 = response.data[0].descripcion
-      access.profesion2 = response.data[1].profesion
-      access.nombre2 = response.data[1].nombre
-      access.descripcion2 = response.data[1].descripcion
-      access.profesion3 = response.data[2].profesion
-      access.nombre3 = response.data[2].nombre
-      access.descripcion3 = response.data[2].descripcion
-    })
+   async mounted(){
+     try{
+       const response = await axios.get('http://localhost:3006/users')
+       console.log(response)
+      this.profesion1= response.data[0].profesion
+      this.nombre1 = response.data[0].nombre
+      this.descripcion1 = response.data[0].descripcion
+      this.profesion2 = response.data[1].profesion
+      this.nombre2 = response.data[1].nombre
+      this.descripcion2 = response.data[1].descripcion
+      this.profesion3 = response.data[2].profesion
+      this.nombre3 = response.data[2].nombre
+      this.descripcion3 = response.data[2].descripcion
+     }
+       catch(error){
+         console.log(error)
+       }
   },
   methods: {
       facebook(){
